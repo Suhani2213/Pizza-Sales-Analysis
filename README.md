@@ -2,11 +2,12 @@
 **Introduction:** Welcome to the Pizza Sales Data Analysis project! This repository is dedicated to exploring pizza sales data through SQL queries. By utilizing tables such as order_details, orders, pizza_types, and pizza, we strive to uncover meaningful insights into customer preferences, revenue trends, and distribution patterns.
 
 
-**Project Objective**
+**Project Objective:**
 The Pizza Sales Project is a data analysis Project aimed at analyzing sales data from a pizza restaurant chain. Utilizing SQL for data extraction, transformation, and analysis, the project seeks to uncover insights and provide actionable recommendations to optimize menu offerings, enhance marketing strategies, improve operational efficiency, and ultimately boost sales and customer satisfaction.
 
-**Business Objective and Problem**
+
 **Business Objective:** The primary goal of the business is to increase sales and profitability by optimizing our pizza menu. This involves enhancing the appeal of underperforming pizzas, leveraging customer preferences, and implementing strategic promotions to attract new customers, retain existing ones, and boost revenue across all categories.
+
 
 **Business Problem:** Despite a diverse menu, certain pizzas (California Chicken, Four Cheese, Mexicana, Five Cheese, Spicy Italian, Italian Supreme) are underperforming in sales and revenue. This gap between our offerings and customer preferences results in missed revenue opportunities. Our aim is to identify and develop strategies to stimulate interest and sales of underperformance pizzas.
 
