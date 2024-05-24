@@ -1,25 +1,7 @@
-CREATE DATABASE chicagopizza;
-USE chicagopizza;
-create table orders (
-order_id int not null,
-order_date date not null,
-order_time time not null,
-PRIMARY KEY(order_id)
-);
-
-create table order_details (
-order_details_id int not null,
-order_id int not null,
-pizza_id text not null,
-quantity int not null,
-PRIMARY KEY(order_details_id)
-);
-
-
-SELECT * FROM pizzas;
-SELECT * FROM pizza_types;
-SELECT * FROM orders;
-SELECT * FROM order_details;
+select * from chicagopizza.pizzas;
+select * from chicagopizza.orders;
+select * from chicagopizza.pizza_type;
+select * from chicagopizza.order_details;
 
 
 -- Retrieve the total number of orders placed.
@@ -116,7 +98,6 @@ GROUP BY category
 ORDER BY quantity DESC;
 
 
-
 -- Determine the distribution of orders by hour of the day.
 SELECT 
     HOUR(order_time) hour, COUNT(order_id) order_count
@@ -126,7 +107,6 @@ GROUP BY HOUR(order_time)
 ORDER BY order_count DESC;
 
 
-
 -- find the category-wise distribution of pizzas.
 SELECT 
     category, COUNT(name) pizza_category_count
@@ -134,7 +114,6 @@ FROM
     pizza_types
 GROUP BY category
 ORDER BY pizza_category_count DESC;
-
 
 
 -- calculate the average number of pizzas ordered on a per day.
@@ -164,8 +143,6 @@ FROM pizza_revenue
 WHERE revenue_rank <=3;
 
 
-
-
 -- Calculate the percentage contribution of each pizza type to total revenue.
 SELECT 
     category,
@@ -186,8 +163,6 @@ FROM
     ORDER BY percentage_revenue_contri DESC) percentage_revenue;
 
 
-
-
 -- Analyze the cumulative revenue generated over time.
 WITH sales as(
 SELECT order_date, SUM(quantity* price) revenue
@@ -199,7 +174,6 @@ JOIN orders o ON o.order_id = od.order_id
 SELECT order_date,
        ROUND(SUM(revenue) OVER (ORDER BY order_date ROWS UNBOUNDED PRECEDING), 2) cumulative_revenue
 FROM sales;
-
 
 
 -- Determine the top 3 most ordered pizza types based on revenue for each pizza category.
