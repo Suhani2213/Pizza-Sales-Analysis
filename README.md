@@ -3,7 +3,6 @@
 
 
 **Project Objective**
-
 The Pizza Sales Project is a data analysis Project aimed at analyzing sales data from a pizza restaurant chain. Utilizing SQL for data extraction, transformation, and analysis, the project seeks to uncover insights and provide actionable recommendations to optimize menu offerings, enhance marketing strategies, improve operational efficiency, and ultimately boost sales and customer satisfaction.
 
 **Business Objective and Problem**
