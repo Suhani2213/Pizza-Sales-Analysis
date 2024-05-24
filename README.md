@@ -11,7 +11,7 @@ The Pizza Sales Project is a data analysis Project aimed at analyzing sales data
 **Business Problem:** Despite a diverse menu, certain pizzas (California Chicken, Four Cheese, Mexicana, Five Cheese, Spicy Italian, Italian Supreme) are underperforming in sales and revenue. This gap between our offerings and customer preferences results in missed revenue opportunities. Our aim is to identify and develop strategies to stimulate interest and sales of underperformance pizzas.
 
 
-****Key Insights***
+**Key Insights**
 1.   The total number of orders placed in 2015 was 21,350, generating a total revenue of $817,860.05.
 
 2.   The highest-priced pizza was The Greek Pizza, priced at $35.95.
